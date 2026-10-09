@@ -1,0 +1,24 @@
+# Dependencies, build outputs, local caches and browser reports
+node_modules/
+dist/
+releases/
+pages-artifact/
+.npm-cache/
+.browser-cache/
+coverage/
+test-results/
+test-results-share/
+playwright-report/
+*.log
+# Secrets must never be committed. An example must contain dummy values only.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Local editor/OS files and personal saves
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+saves/

@@ -1,0 +1,24 @@
+# 明亮三国桌游 UI 样稿 v1
+
+工具：内置 image_gen。此图用于确认美术方向，尚未用于替换游戏界面。
+
+参考图 1：用户提供的明亮可爱三国桌游图。
+参考图 2：现有 1366×768 对局界面截图。
+
+实现时保留 40 格行军环路、魏红蜀黄吴蓝、三个概况无滚动条、大骰子位于按钮上方、紧凑锦囊与完整事件反馈。样稿中的人物展示位置、数字与部分地名不作为实际游戏逻辑或数据。
+
+## 生成提示词
+
++Use case: ui-mockup.
+Asset type: a single high fidelity desktop gameplay screen art-direction mockup for the existing Chinese Three Kingdoms Monopoly game.
+Input images: Image 1 is the user's STYLE REFERENCE ONLY; Image 2 is the CURRENT GAMEPLAY SCREEN and the layout target.
+Primary request: redesign Image 2 into a bright, cute, warm, premium illustrated tabletop game UI using Image 1's creamy parchment background, warm honey-gold highlights, playful chibi Three Kingdoms art, lush miniature Chinese architecture, soft daylight, and subtle wood and paper materials. Create the entire finished-looking gameplay screen, not a marketing cover or a concept moodboard. Wide desktop composition, roughly 16:9, straight-on UI with crisp readable controls.
+Preserve Image 2's information architecture: narrow header, left column with all THREE player overview cards fully visible and a larger match log beneath; large central rectangular 40-space perimeter game board with a lush landscape in the center; right column containing speed control at the top, spacious dice area with a large ivory 3D die above a large gold roll button, a compact three-card inventory along the bottom, and a small location detail bar.
+Scene/backdrop: overall page background is warm light cream / pale parchment, with very faint cloud curls, pale distant mountains, and understated botanical decoration only near outer margins. All side panels are LIGHT cream paper cards with warm brown text, thin caramel outlines, soft rounded corners, and restrained shadows. No dark green panels or dark fantasy mood.
+Subjects: three DISTINCT expressive large-headed small-bodied chibi leaders: Liu Bei with a benevolent smile and yellow/gold clothing and a small crown, Cao Cao with red/burgundy clothing, commanding eyes and a neatly shaped beard, Sun Quan with blue clothing, youthful face and reddish-brown beard. Wei is RED, Shu is YELLOW, Wu is BLUE everywhere, irrespective of colors or characters in reference Image 1. Do not substitute Guan Yu or Zhang Fei for Cao Cao or Sun Quan. Portraits in left panel, and small recognizable standee pawns on board.
+Board: preserve the flat readable perimeter travel path and the current map proportions. Distinct individual beige raised game tiles, each with a clearly readable town name and a charming tiny dimensional building. Show a mix of small villages, county centers, larger walled cities, and clearly differing 1/2/3 building tiers, with occasional market, military-order, event, and start tiles. A few owned tiles have soft red, gold-yellow, or blue tint and corresponding tiny flag. All 40 board spaces must remain readable and individually separated. Keep the board top-down, with softly dimensional illustrated buildings, not an angled board that distorts tile readability.
+Center landscape: rich but not cluttered handcrafted miniature river-and-mountains landscape with tiny bridges, woods, fields, and distant Chinese rooftops. Bright mint foliage, turquoise river, warm sunlit stone and pale gold paths. Four softly integrated region names: 中原, 荆襄, 江东, 巴蜀. Do not fill the center with giant characters, a giant title, or advertising.
+Right panel: ivory dimensional die on a small pale wood dice tray, clearly the main object in this column. Compact inventory cards with original illustrations: paper fan and fortress for 空城计, galloping horse for 千里走单骑, golden coins for 生财有道. Small cards should occupy much less space than dice area.
+Text (verbatim where possible): header title 三國大富翁 or 三国大富翁 (prefer 三国大富翁), status 第 8 / 40 轮 · 刘备（真人）· 准备掷骰; player section 三方势力; portraits labeled 蜀 · 刘备（你）, 魏 · 曹操（AI）, 吴 · 孙权（AI）; readable cash, total assets, land and card count summaries on each player, no scrollbars. Log section 对局记录 with 3 short recent events. Speed control AI / 移动速度 and 普通. Right section 准备掷骰, button 掷骰子, inventory 我的锦囊 3 / 3, 空城计, 千里走单骑, 生财有道, detail 地点详情. Include a modest lower-center cream-and-gold toast: 购买城池 / 刘备购买洛阳，花费 400 金，获得一级建筑。 / 刘备 −400 金. Tiny top toolbar buttons 新局设置, 导出存档, 导入存档, 暂停, 音效, 玩法说明.
+Materials: warm parchment paper, smooth ivory dice, subtle honey wood, polished collectible figurine style, soft painterly rendering with clear silhouettes. Cohesive 2D painted game art, lightly dimensional, expressive and cute, not photorealism.
+Constraints: full screen UI with legible hierarchy; light backgrounds; all three overviews visible without scrolling; compact inventory; large die above roll button; preserve the core board layout from Image 2. No device frame, no watermark, no external brands, no presentation headers, no variant logo grids, no huge dramatic promotional title.

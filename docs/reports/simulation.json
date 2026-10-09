@@ -1,0 +1,1301 @@
+{
+  "purpose": "Deterministic rule-AI smoke simulations; not human feedback or proof of balance. Human seat uses baseline reserve 200.",
+  "samples": 72,
+  "summary": {
+    "rounds": {
+      "samples": 60,
+      "completed": 60,
+      "averageRounds": 40,
+      "bankruptcies": 0,
+      "firstSeatWins": 21,
+      "wins": {
+        "liu": 23,
+        "guan": 17,
+        "zhang": 20
+      }
+    },
+    "classic-standard": {
+      "samples": 6,
+      "completed": 0,
+      "averageRounds": 208.33,
+      "bankruptcies": 0,
+      "firstSeatWins": 0,
+      "wins": {
+        "liu": 0,
+        "guan": 0,
+        "zhang": 0
+      }
+    },
+    "classic-compact": {
+      "samples": 6,
+      "completed": 6,
+      "averageRounds": 197.33,
+      "bankruptcies": 12,
+      "firstSeatWins": 4,
+      "wins": {
+        "liu": 1,
+        "guan": 3,
+        "zhang": 2
+      }
+    }
+  },
+  "landTotals": {
+    "涿郡，": {
+      "invested": 11850,
+      "rent": 0
+    },
+    "许昌，": {
+      "invested": 29200,
+      "rent": 0
+    },
+    "襄阳，": {
+      "invested": 18750,
+      "rent": 0
+    },
+    "下邳，": {
+      "invested": 18250,
+      "rent": 0
+    },
+    "江陵，": {
+      "invested": 18250,
+      "rent": 0
+    },
+    "长沙，": {
+      "invested": 11400,
+      "rent": 0
+    },
+    "成都，": {
+      "invested": 27600,
+      "rent": 0
+    },
+    "成都": {
+      "invested": 18000,
+      "rent": 26400
+    },
+    "江陵": {
+      "invested": 15840,
+      "rent": 20925
+    },
+    "涿郡": {
+      "invested": 12332,
+      "rent": 18012
+    },
+    "建业，": {
+      "invested": 28800,
+      "rent": 0
+    },
+    "平原，": {
+      "invested": 11250,
+      "rent": 0
+    },
+    "下邳": {
+      "invested": 17718,
+      "rent": 31857
+    },
+    "许昌": {
+      "invested": 27700,
+      "rent": 47120
+    },
+    "柴桑，": {
+      "invested": 11250,
+      "rent": 0
+    },
+    "建业": {
+      "invested": 20300,
+      "rent": 34080
+    },
+    "长沙": {
+      "invested": 11541,
+      "rent": 19068
+    },
+    "柴桑": {
+      "invested": 10302,
+      "rent": 13081
+    },
+    "汝南，": {
+      "invested": 11400,
+      "rent": 0
+    },
+    "徐州，": {
+      "invested": 20250,
+      "rent": 0
+    },
+    "汉中，": {
+      "invested": 19000,
+      "rent": 0
+    },
+    "汝南": {
+      "invested": 12969,
+      "rent": 21549
+    },
+    "徐州": {
+      "invested": 20468,
+      "rent": 25721
+    },
+    "汉中": {
+      "invested": 12710,
+      "rent": 22619
+    },
+    "平原": {
+      "invested": 11919,
+      "rent": 19368
+    },
+    "襄阳": {
+      "invested": 15464,
+      "rent": 32131
+    }
+  },
+  "bankruptcyCauses": {
+    "集市税费": 1,
+    "建业 过路费": 2,
+    "徐州 过路费": 1,
+    "汉中 过路费": 1,
+    "柴桑 过路费": 2,
+    "襄阳 过路费": 1,
+    "江陵 过路费": 1,
+    "许昌 过路费": 2,
+    "汝南 过路费": 1
+  },
+  "runs": [
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-0",
+      "completed": true,
+      "rounds": 40,
+      "operations": 411,
+      "winner": "liu",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-1",
+      "completed": true,
+      "rounds": 40,
+      "operations": 414,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-2",
+      "completed": true,
+      "rounds": 40,
+      "operations": 401,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-3",
+      "completed": true,
+      "rounds": 40,
+      "operations": 406,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-4",
+      "completed": true,
+      "rounds": 40,
+      "operations": 418,
+      "winner": "guan",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-5",
+      "completed": true,
+      "rounds": 40,
+      "operations": 405,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-6",
+      "completed": true,
+      "rounds": 40,
+      "operations": 412,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-7",
+      "completed": true,
+      "rounds": 40,
+      "operations": 394,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-8",
+      "completed": true,
+      "rounds": 40,
+      "operations": 415,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-9",
+      "completed": true,
+      "rounds": 40,
+      "operations": 415,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-10",
+      "completed": true,
+      "rounds": 40,
+      "operations": 410,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-11",
+      "completed": true,
+      "rounds": 40,
+      "operations": 409,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-12",
+      "completed": true,
+      "rounds": 40,
+      "operations": 406,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-13",
+      "completed": true,
+      "rounds": 40,
+      "operations": 417,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-14",
+      "completed": true,
+      "rounds": 40,
+      "operations": 420,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-15",
+      "completed": true,
+      "rounds": 40,
+      "operations": 400,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-16",
+      "completed": true,
+      "rounds": 40,
+      "operations": 400,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-17",
+      "completed": true,
+      "rounds": 40,
+      "operations": 407,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-18",
+      "completed": true,
+      "rounds": 40,
+      "operations": 404,
+      "winner": "guan",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-19",
+      "completed": true,
+      "rounds": 40,
+      "operations": 393,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-20",
+      "completed": true,
+      "rounds": 40,
+      "operations": 414,
+      "winner": "liu",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-21",
+      "completed": true,
+      "rounds": 40,
+      "operations": 393,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-22",
+      "completed": true,
+      "rounds": 40,
+      "operations": 406,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-23",
+      "completed": true,
+      "rounds": 40,
+      "operations": 395,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-24",
+      "completed": true,
+      "rounds": 40,
+      "operations": 400,
+      "winner": "guan",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-25",
+      "completed": true,
+      "rounds": 40,
+      "operations": 423,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-26",
+      "completed": true,
+      "rounds": 40,
+      "operations": 409,
+      "winner": "guan",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-27",
+      "completed": true,
+      "rounds": 40,
+      "operations": 404,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-28",
+      "completed": true,
+      "rounds": 40,
+      "operations": 408,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-29",
+      "completed": true,
+      "rounds": 40,
+      "operations": 409,
+      "winner": "zhang",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-30",
+      "completed": true,
+      "rounds": 40,
+      "operations": 399,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-31",
+      "completed": true,
+      "rounds": 40,
+      "operations": 408,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-32",
+      "completed": true,
+      "rounds": 40,
+      "operations": 410,
+      "winner": "guan",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-33",
+      "completed": true,
+      "rounds": 40,
+      "operations": 401,
+      "winner": "liu",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-34",
+      "completed": true,
+      "rounds": 40,
+      "operations": 398,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-35",
+      "completed": true,
+      "rounds": 40,
+      "operations": 402,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-36",
+      "completed": true,
+      "rounds": 40,
+      "operations": 402,
+      "winner": "guan",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-37",
+      "completed": true,
+      "rounds": 40,
+      "operations": 417,
+      "winner": "guan",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-38",
+      "completed": true,
+      "rounds": 40,
+      "operations": 414,
+      "winner": "zhang",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-39",
+      "completed": true,
+      "rounds": 40,
+      "operations": 399,
+      "winner": "zhang",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-40",
+      "completed": true,
+      "rounds": 40,
+      "operations": 419,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-41",
+      "completed": true,
+      "rounds": 40,
+      "operations": 411,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-42",
+      "completed": true,
+      "rounds": 40,
+      "operations": 411,
+      "winner": "guan",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-43",
+      "completed": true,
+      "rounds": 40,
+      "operations": 403,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-44",
+      "completed": true,
+      "rounds": 40,
+      "operations": 403,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-45",
+      "completed": true,
+      "rounds": 40,
+      "operations": 401,
+      "winner": "zhang",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-46",
+      "completed": true,
+      "rounds": 40,
+      "operations": 408,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-47",
+      "completed": true,
+      "rounds": 40,
+      "operations": 403,
+      "winner": "zhang",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-48",
+      "completed": true,
+      "rounds": 40,
+      "operations": 400,
+      "winner": "liu",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-49",
+      "completed": true,
+      "rounds": 40,
+      "operations": 404,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-50",
+      "completed": true,
+      "rounds": 40,
+      "operations": 411,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-51",
+      "completed": true,
+      "rounds": 40,
+      "operations": 404,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-52",
+      "completed": true,
+      "rounds": 40,
+      "operations": 405,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-53",
+      "completed": true,
+      "rounds": 40,
+      "operations": 412,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-54",
+      "completed": true,
+      "rounds": 40,
+      "operations": 420,
+      "winner": "zhang",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-55",
+      "completed": true,
+      "rounds": 40,
+      "operations": 404,
+      "winner": "liu",
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-56",
+      "completed": true,
+      "rounds": 40,
+      "operations": 407,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-57",
+      "completed": true,
+      "rounds": 40,
+      "operations": 408,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-58",
+      "completed": true,
+      "rounds": 40,
+      "operations": 403,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-59",
+      "completed": true,
+      "rounds": 40,
+      "operations": 397,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-0",
+      "completed": false,
+      "rounds": 208,
+      "operations": 2000,
+      "winner": null,
+      "firstSeat": "zhang",
+      "bankruptcies": 0,
+      "tiedWinners": [],
+      "endReason": "simulation step limit"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-1",
+      "completed": false,
+      "rounds": 209,
+      "operations": 2000,
+      "winner": null,
+      "firstSeat": "guan",
+      "bankruptcies": 0,
+      "tiedWinners": [],
+      "endReason": "simulation step limit"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-2",
+      "completed": false,
+      "rounds": 207,
+      "operations": 2000,
+      "winner": null,
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [],
+      "endReason": "simulation step limit"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-3",
+      "completed": false,
+      "rounds": 210,
+      "operations": 2000,
+      "winner": null,
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [],
+      "endReason": "simulation step limit"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-4",
+      "completed": false,
+      "rounds": 209,
+      "operations": 2000,
+      "winner": null,
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [],
+      "endReason": "simulation step limit"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-5",
+      "completed": false,
+      "rounds": 207,
+      "operations": 2000,
+      "winner": null,
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "tiedWinners": [],
+      "endReason": "simulation step limit"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-0",
+      "completed": true,
+      "rounds": 185,
+      "operations": 1664,
+      "winner": "zhang",
+      "firstSeat": "guan",
+      "bankruptcies": 2,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "仅剩一名存活角色，提前结束。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-1",
+      "completed": true,
+      "rounds": 146,
+      "operations": 1523,
+      "winner": "guan",
+      "firstSeat": "zhang",
+      "bankruptcies": 2,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "仅剩一名存活角色，提前结束。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-2",
+      "completed": true,
+      "rounds": 286,
+      "operations": 2260,
+      "winner": "guan",
+      "firstSeat": "guan",
+      "bankruptcies": 2,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "仅剩一名存活角色，提前结束。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-3",
+      "completed": true,
+      "rounds": 146,
+      "operations": 1473,
+      "winner": "guan",
+      "firstSeat": "guan",
+      "bankruptcies": 2,
+      "tiedWinners": [
+        "guan"
+      ],
+      "endReason": "仅剩一名存活角色，提前结束。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-4",
+      "completed": true,
+      "rounds": 252,
+      "operations": 2160,
+      "winner": "zhang",
+      "firstSeat": "zhang",
+      "bankruptcies": 2,
+      "tiedWinners": [
+        "zhang"
+      ],
+      "endReason": "仅剩一名存活角色，提前结束。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-5",
+      "completed": true,
+      "rounds": 169,
+      "operations": 1581,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，提前结束。"
+    }
+  ]
+}

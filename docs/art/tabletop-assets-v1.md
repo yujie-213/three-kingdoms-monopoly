@@ -1,0 +1,31 @@
+# 明亮三国桌游美术素材 v1
+
+生成工具：内置 imagegen。风格依据用户确认的 `ui-concept-v1.png`。
+
+## 素材与图集
+
+- `assets/tabletop-map-v1.png`：中央山水背景，无 UI 文字和人物。
+- `assets/tabletop-portraits-v1.png`：透明背景，横排三个等宽格，刘备（黄色）、曹操（红色）、孙权（蓝色）。
+- `assets/tabletop-buildings-v1.png`：透明背景，3×3 图集。列依次为县城、郡治、名城；行依次为建筑一、二、三级。无主土地使用第一行预览。
+- `assets/tabletop-props-v1.png`：透明背景，5×2 图集；首行：起点、客栈、锦囊设施、集市、事件。次行：献策、赤壁、空城计、千里走单骑、生财有道。
+
+UI 使用 `src/ui/tabletop.css` 统一奶油纸色、浅木纹、暖棕文字和蜂蜜金按钮。图片共享样式规则仅创建一次，避免每次渲染复制图集，且不使用超过浏览器大小限制的 CSS 图片变量。地图文字、角色归属、地价、锦囊和动作均由实际游戏状态渲染。
+
+## 提示词
+
+### map
+
+Use case: illustration-story. Asset type: in-game central landscape background, landscape 3:2. Input reference is the approved gameplay mockup; match its bright cute painted miniature Three Kingdoms tabletop art. Generate ONLY a seamless-looking cohesive miniature map illustration, not any UI. A gently top-down landscape with lush rounded trees, terraced fields, soft forested mountains on the left (Bashu), open farmland and modest Chinese rooftops in the upper-middle (Central Plains), a beautiful winding turquoise river with two stone bridges on the right (Jingxiang), water-village buildings and boats in lower-right (Jiangdong). Warm soft daylight, cream earth, mint greenery, honey-gold roofs, blue and terracotta roofs, painterly collectible board game style. Moderate detail, recognizable silhouettes, airy clearings in upper-center, middle-right, lower-right, lower-left for programmatic region labels. The map fills the full image edge to edge, with gentle scenery along the edges. IMPORTANT no people, no giant player figurines, no characters, no text, no labels, no flags, no numbers, no grid, no frame, no UI, no watermark, no logos. Do not include a square board or surrounding game tiles. Original illustration matching approved reference art direction.
+
+### portraits
+
+Use case: stylized-concept. Asset type: game character spritesheet. Match the approved reference's polished cute Three Kingdoms chibi collectible figure artwork. Generate exactly THREE full-body characters, straight-on slight three-quarter pose, oversized expressive heads and small bodies, aligned on the same baseline, on a TRUE TRANSPARENT background. Wide image divided into EXACTLY 3 equally sized invisible square cells in a single horizontal row. Every character centered in its own cell, generous 12 percent empty margin on all sides, no overlap between cells, equal character size, full bodies and feet visible. LEFT cell: Liu Bei, friendly smiling eyes, thin moustache and small goatee, dark brown swept hair, small ornate gold crown with green jewel, golden-YELLOW ceremonial robe, confident welcoming stance. MIDDLE cell: Cao Cao, commanding brows, neatly shaped long black beard, dark topknot and golden headpiece, RED burgundy armor and robe with gold trim, one hand resting on belt. RIGHT cell: Sun Quan, youthful confident smile, reddish-brown short beard, brown hair and small gold headpiece, BLUE robe and armor with gold trim, lively stance. Faction colors MUST be Liu Bei YELLOW, Cao Cao RED, Sun Quan BLUE. Soft painterly dimensional shading, warm highlights, charming facial expressions, no weapons obscuring faces, simple readable shapes for small sprites. No text, no written flags, no frames, no UI, no ground, no pedestal, no opaque background, no extra characters. Return only these three production-ready game sprites.
+
+### buildings
+
+Use case: stylized-concept. Asset type: transparent game buildings spritesheet. Approved reference is style only. EXACTLY nine different miniature Chinese Three Kingdoms buildings, arranged precisely in a 3 by 3 regular equal-square-cell grid, transparent background, invisible grid, each object completely within its own cell with 12 percent padding. Consistent slightly elevated front three-quarter view, cute rounded high-quality hand-painted collectible tabletop model art, ivory walls, warm wooden beams, terracotta and turquoise tiled roofs, bright greenery accents, soft daylight. Column 1 village/county small towns: row1 one simple cottage, row2 two cottages with small fence, row3 three cottages and small watchtower. Column2 administrative county centers: row1 small blue-roof yamen gatehouse, row2 larger blue-roof yamen compound with side wings, row3 grand blue-roof county compound with double gate. Column3 major walled cities: row1 terracotta-roof city gate with small wall, row2 impressive gate and multi-tier palace behind it, row3 grand golden-roof palace with city walls and towers. Strong recognizable changes across upgrade rows, each building same base footprint but increasingly tall and elaborate. EXACT placement row-major: cottage / yamen / city gate; improved cottage / improved yamen / improved city; best cottage / best yamen / best palace. No text, no labels, no characters, no opaque background, no flags with writing, no shadows extending beyond own cell, no captions, no frame, no watermark.
+
+### props
+
+Use case: stylized-concept. Asset type: transparent tabletop game icon spritesheet. Approved mockup is visual style reference ONLY. Exactly TEN cute polished hand-painted Three Kingdoms game objects in a strict 5-column by 2-row equal-square-cell grid. Invisible grid, transparent background, every icon centered in its own cell, ample 15 percent padding, identical scale and lighting, simple readable silhouettes. Row1 left to right: 1 small military camp with golden plain triangular flag and one tent (starting point); 2 quaint roadside inn with tea jars and red tiled roof (inn); 3 golden silk pouch with rolled strategy scrolls (card stop); 4 colorful market stall with a few coins (market tax); 5 unfurled ivory parchment scroll with red wax seal and NO writing (event). Row2 left to right: 6 turquoise-roof small pagoda with a paper fan (advice); 7 small wooden sailing boat with red sails above turquoise water (Red Cliff); 8 white folding paper fan in front of a tiny walled fortress (rent shield card); 9 lively brown galloping horse with golden saddle (stride card); 10 opened wooden treasure chest brimming with gold coins (fortune card). Soft dimensional painterly illustration, gold and cream highlights, warm cute tabletop game art matching reference. No text, no labels, no characters, no UI, no card frames, no opaque background, no watermark. EXACTLY five cells across and two down, do not add or omit any item.
+

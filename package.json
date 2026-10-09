@@ -1,0 +1,30 @@
+{
+  "name": "three-kingdoms-monopoly",
+  "version": "1.3.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prebuild": "node scripts/guard-output.js",
+    "build": "vite build && node scripts/verify-release.js",
+    "verify:release": "node scripts/verify-release.js",
+    "test:browser": "playwright test",
+    "test:share": "playwright test --config playwright.share.config.js",
+    "simulate": "node scripts/simulate.js",
+    "release": "npm run check && node scripts/package-release.js",
+    "prepare:pages": "npm run build && node scripts/prepare-pages.js",
+    "check": "npm test && npm run build && npm run test:browser"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "acorn": "^8.19.0",
+    "parse5": "^8.0.0",
+    "vite": "^7.1.0",
+    "vitest": "^4.0.0"
+  }
+}

@@ -1,13 +1,14 @@
 import { describe, it, expect } from 'vitest';
 import { createGame, Phase, dispatch, currentPlayer, assets, ranking, rent } from '../../src/core/game.js';
 import { nextRandom } from '../../src/core/random.js';
+import { exportSave, importSave } from '../../src/core/save.js';
 import { chooseCommand, publicView } from '../../src/ai/strategy.js';
 
 describe('M1 initialization', () => {
   it('starts all three together with equal cash, one human and no salary', () => {
     const state = createGame({ humanId: 'sun' });
     expect(state.players.map((player) => player.position)).toEqual([0, 0, 0]);
-    expect(state.players.map((player) => player.cash)).toEqual([1800, 1800, 1800]);
+    expect(state.players.map((player) => player.cash)).toEqual([3200, 3200, 3200]);
     expect(state.players.filter((player) => player.human).map((player) => player.id)).toEqual(['sun']);
     expect(state.phase).toBe(Phase.TURN_START);
     expect(state.board).toHaveLength(40);
@@ -18,12 +19,20 @@ describe('M1 initialization', () => {
     const state = createGame();
     expect(nextRandom(state.rngState)).toEqual(nextRandom(state.rngState));
   });
+  it('automatically seeds new games and preserves their replay and save state', () => {
+    const first = createGame();
+    const second = createGame();
+    expect(first.seed).toMatch(/^[0-9a-f]{32}$/);
+    expect(second.seed).not.toBe(first.seed);
+    expect(createGame({ seed: first.seed })).toEqual(first);
+    expect(importSave(exportSave(first))).toEqual(first);
+  });
   it('creates independent new games without old ownership', () => {
     const first = createGame();
     first.board[1].ownerId = 'liu';
     first.players[0].cash = 0;
     expect(createGame().board[1].ownerId).toBeNull();
-    expect(createGame().players[0].cash).toBe(1800);
+    expect(createGame().players[0].cash).toBe(3200);
   });
   it('supports a different start index', () => {
     const state = createGame({ board: [{ id: 'a', type: 'special' }, { id: 'b', type: 'start' }] });
@@ -59,9 +68,9 @@ describe('M1 rules and legal actions', () => {
   });
   it.each([0, 1])('pays salary once on crossing or exact start, target %i', (target) => {
     const state = createGame();
-    state.phase = Phase.MOVING; state.move = { target, laps: 1 };
+    currentPlayer(state).position = 39; state.phase = Phase.MOVING; state.move = { from: 39, steps: target + 1, target, laps: 1 };
     const next = act(state, 'FINISH_MOVE').state;
-    expect(currentPlayer(next).cash).toBe(2300);
+    expect(currentPlayer(next).cash).toBe(3325);
     expect(currentPlayer(next).laps).toBe(1);
     expect(act(next, 'FINISH_MOVE').accepted).toBe(false);
   });
@@ -70,14 +79,14 @@ describe('M1 rules and legal actions', () => {
     currentPlayer(state).position = 0;
     const rolled = act(state, 'ROLL').state;
     expect(rolled.move).toMatchObject({ target: 1, laps: 1 });
-    expect(currentPlayer(act(rolled, 'FINISH_MOVE').state).cash).toBe(2300);
+    expect(currentPlayer(act(rolled, 'FINISH_MOVE').state).cash).toBe(3367);
   });
   it('settles only final tile, not passed enemy land', () => {
     const state = createGame({ config: { diceSides: 6, eventsEnabled: false } });
     state.board[1].ownerId = state.order[1]; state.board[1].level = 3;
     state.phase = Phase.MOVING; state.move = { target: 2, laps: 0 };
     const next = act(state, 'FINISH_MOVE').state;
-    expect(currentPlayer(next).cash).toBe(1800);
+    expect(currentPlayer(next).cash).toBe(3200);
     expect(next.phase).toBe(Phase.TURN_END);
   });
   it('allows refusing a purchase and buys exactly level one once', () => {
@@ -85,13 +94,15 @@ describe('M1 rules and legal actions', () => {
     expect(act(state, 'PASS').state.board[1].ownerId).toBeNull();
     const bought = act(state, 'BUY').state;
     expect(bought.board[1]).toMatchObject({ level: 1, investment: 150, ownerId: currentPlayer(state).id });
-    expect(currentPlayer(bought).cash).toBe(1650);
+    expect(currentPlayer(bought).cash).toBe(3050);
     expect(act(bought, 'UPGRADE').accepted).toBe(false);
     expect(act(bought, 'BUY').accepted).toBe(false);
   });
-  it('upgrades only once per separate landing and refuses max level', () => {
+  it('upgrades only once per separate turn and refuses max level', () => {
     let state = act(landed(), 'BUY').state;
     for (const level of [2, 3]) {
+      currentPlayer(state).laps = 1;
+      for (let turn = 0; turn < 3; turn++) { state.phase = Phase.TURN_END; state = act(state, 'END_TURN').state; }
       state.phase = Phase.MOVING; state.move = { target: 1, laps: 0 };
       state = act(state, 'FINISH_MOVE').state;
       state = act(state, 'UPGRADE').state;
@@ -100,7 +111,7 @@ describe('M1 rules and legal actions', () => {
     }
     state.phase = Phase.MOVING; state.move = { target: 1, laps: 0 };
     expect(act(state, 'FINISH_MOVE').state.phase).toBe(Phase.TURN_END);
-    expect(state.board[1].investment).toBe(413);
+    expect(state.board[1].investment).toBe(390);
   });
   it('rejects unaffordable purchase without any ownership or cash change', () => {
     const state = landed(); currentPlayer(state).cash = 100;
@@ -114,8 +125,8 @@ describe('M1 rules and legal actions', () => {
     state.board[1].ownerId = owner.id; state.board[1].level = 1;
     state.phase = Phase.MOVING; state.move = { target: 1, laps: 0 };
     const next = act(state, 'FINISH_MOVE').state;
-    expect(currentPlayer(next).cash).toBe(1777);
-    expect(next.players.find((p) => p.id === owner.id).cash).toBe(1823);
+    expect(currentPlayer(next).cash).toBe(3185);
+    expect(next.players.find((p) => p.id === owner.id).cash).toBe(3215);
     expect(act(next, 'FINISH_MOVE').accepted).toBe(false);
   });
   it('locks debt until 60% actual-investment sale settles original payment', () => {
@@ -133,7 +144,7 @@ describe('M1 rules and legal actions', () => {
     expect(act(debt, 'SELL', { tileId: 'tile-1' }).accepted).toBe(false);
     const sold = act(debt, 'SELL', { tileId: 'tile-3' }).state;
     expect(sold.board[3]).toMatchObject({ ownerId: null, level: 0, investment: 0 });
-    expect(currentPlayer(sold).cash).toBe(139); // 5 + floor(263*.6) - 23
+    expect(currentPlayer(sold).cash).toBe(147); // 5 + floor(263*.6) - 15
     expect(sold.debt).toBeNull();
     expect(sold.phase).toBe(Phase.TURN_END);
   });
@@ -145,7 +156,7 @@ describe('M1 rules and legal actions', () => {
     state.phase = Phase.MOVING; state.move = { target: 1, laps: 0 };
     const next = act(act(state, 'FINISH_MOVE').state, 'BANKRUPT').state;
     expect(currentPlayer(next)).toMatchObject({ cash: 0, alive: false });
-    expect(next.players.find((p) => p.id === state.order[1]).cash).toBe(1805);
+    expect(next.players.find((p) => p.id === state.order[1]).cash).toBe(3205);
     expect(next.board[3].ownerId).toBeNull();
     expect(currentPlayer(act(next, 'END_TURN').state).alive).toBe(true);
   });
@@ -158,7 +169,7 @@ describe('M1 rules and legal actions', () => {
     expect(act(state, 'BANKRUPT').state.phase).toBe(Phase.GAME_OVER);
   });
   it('counts a round only after all active actors and stops at 40 complete rounds', () => {
-    let state = createGame();
+    let state = createGame({ mode: 'rounds' });
     for (let turn = 1; turn <= 120; turn++) {
       state.phase = Phase.TURN_END;
       state = act(state, 'END_TURN').state;
@@ -170,8 +181,8 @@ describe('M1 rules and legal actions', () => {
     const state = createGame();
     expect(ranking(state).map((row) => row.rank)).toEqual([1, 1, 1]);
     Object.assign(state.board[1], { ownerId: 'liu', investment: 263, level: 2 });
-    expect(assets(state, 'liu')).toMatchObject({ investment: 263, total: 2063, recovery: 157 });
-    expect(rent(state, state.board[1])).toBe(60);
+    expect(assets(state, 'liu')).toMatchObject({ investment: 263, total: 3463, recovery: 157 });
+    expect(rent(state, state.board[1])).toBe(53);
   });
   it('AI receives no future randomness and uses the same validated dispatcher', () => {
     const state = createGame(); const view = publicView(state);
@@ -181,7 +192,7 @@ describe('M1 rules and legal actions', () => {
   });
   it('replays complete seeded matches without negative cash or dangling debt', () => {
     function simulate() {
-      let state = createGame({ seed: '完整局', config: { eventsEnabled: false } });
+      let state = createGame({ seed: '完整局', mode: 'rounds', config: { eventsEnabled: false } });
       let steps = 0;
       while (state.phase !== Phase.GAME_OVER && steps++ < 1000) {
         const command = state.phase === Phase.MOVING

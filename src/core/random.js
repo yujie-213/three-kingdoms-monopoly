@@ -1,3 +1,8 @@
+export function generateSeed() {
+  return Array.from(globalThis.crypto.getRandomValues(new Uint32Array(4)),
+    (value) => value.toString(16).padStart(8, '0')).join('');
+}
+
 export function seedValue(seed) {
   let value = 2166136261;
   for (const char of String(seed)) value = Math.imul(value ^ char.charCodeAt(0), 16777619) >>> 0;

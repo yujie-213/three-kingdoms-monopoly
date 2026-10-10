@@ -62,7 +62,16 @@ const cells = [
   land('梓潼', 'county', 'west', '益州', '梓潼郡', '梓潼县', '梓潼郡治，蜀道重要节点。'),
   land('南郑', 'county', 'west', '益州', '汉中郡', '南郑县', '汉中郡治，219年刘备取得汉中后属蜀方。'),
 ];
-export const boardDefinition = cells.map((tile, index) => ({ ...tile, id: `tile-${index}`, index }));
+// Preserve legacy effect/history identifiers for saved maps; cardShop replaces the advice gift at 隆中.
+export const boardDefinition = cells.map((tile, index) => ({ ...tile, id: `tile-${index}`, index,
+  ...([2, 13, 29].includes(index) ? { cardShop: true } : {}) }));
+// Gameplay groups describe this itinerary; they are not historical jurisdictions.
+export const cityGroups = [
+  ['yingchuan', '颍川城组', [1, 3, 4]], ['capitalRoad', '中原王都', [6, 7]], ['yuEast', '豫东商路', [8, 9]],
+  ['nanyang', '南阳城组', [10, 11]], ['jianghan', '江汉城组', [12, 14, 16]], ['xiang', '湘水城组', [17, 18]],
+  ['yuzhang', '豫章商路', [20, 21, 22]], ['eastCapital', '江东都邑', [24, 25]], ['wuyue', '吴越商路', [27, 28]],
+  ['ba', '巴地城组', [30, 31]], ['shu', '蜀地城组', [33, 34, 35]], ['northShu', '蜀北商路', [37, 38, 39]],
+].map(([id, name, indices]) => ({ id, name, tileIds: indices.map((index) => `tile-${index}`) }));
 // Presentation is independent of route order, ready for an irregular ring.
 export const boardLayout = { columns: 13, rows: 9 };
 export const cellCoordinates = boardDefinition.map((_, i) => {

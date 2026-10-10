@@ -116,15 +116,92 @@ input, select { color: #61402a; background: #fff8e9; border-color: #cda773; box-
 th, td { border-color: #dbc09a; }
 dialog { color: #64432b; background: linear-gradient(#fff8ea, #f7e7c9); border-color: #c29658; box-shadow: 0 16px 60px #80583650; } dialog::backdrop { background: #5a402a70; }
 .prototype-note { color: #94754f; }
+.save-status { margin: 5px 0 0; font-size: 10px; color: #806343; }
+.card-symbol { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 8px; border: 1px solid #bd9759; color: #85521f; background: #ffe4a9; font-family: "KaiTi", serif; font-size: 24px !important; }
+.group-badge { position: absolute; top: 3px; left: 50%; transform: translateX(-50%); padding: 1px 3px; border-radius: 3px; background: #fff4cb; color: #855017; font-size: 8px; border: 1px solid #c99743; }
+#estate-dialog { width: min(780px, 92vw); }
+#estate-button { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-bottom: 6px; padding: 6px 12px; min-height: 40px; font-weight: 700; font-size: 16px; color: #fff8e6; border: 1px solid #995220; background: linear-gradient(#b67832, #955021); box-shadow: inset 0 1px #e4b36b, 0 2px 4px #80562f30; }
+#estate-button span { display: grid; place-items: center; width: 24px; height: 24px; border: 1px solid #eac68a; border-radius: 5px; font-family: "KaiTi", serif; font-size: 19px; }
+#estate-dialog[open] { display: flex; flex-direction: column; overflow: hidden; }
+.estate-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex: 0 0 auto; padding-bottom: 12px; border-bottom: 1px solid #d5b17a; }
+.estate-header h2 { margin: 0; }
+.estate-header form { margin: 0; }
+.estate-header button { white-space: nowrap; }
+#estate-content { min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding-top: 4px; }
+.economy-caption { position: absolute; right: 10px; top: 10px; max-width: 55%; padding: 6px 8px; border-radius: 8px; border: 1px solid #d5b47c; background: #fff5dce8; color: #63492e; font-size: 10px; line-height: 1.5; white-space: pre-line; }
+.economy-details { padding: 10px; border: 1px solid #d5b17a; border-radius: 8px; background: #fff3d5; font-size: 12px; }
+#actions .reserve-note { margin: 6px 0; font-size: 11px; line-height: 1.4; color: #875b2f; }
+#tile-info { flex-shrink: 1; min-height: 48px; }
+#actions[data-phase="DICE_DECISION"] .dice-stage { height: 100px; min-height: 100px; }
+.dice-routing p { margin: 7px 0; }
+.dice-routing button, .route-options button { width: 100%; margin: 4px 0 !important; }
+.route-options button { text-align: left; font-size: 12px !important; }
+.estate-list, .shop-list, .wealth-results { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.estate-item, .shop-item, .wealth-results article { padding: 12px; border: 1px solid #d5b17a; border-radius: 8px; background: #fff8e8; }
+.estate-item p, .shop-item p { margin: 7px 0; font-size: 12px; }
+.estate-item button, .shop-item button { min-height: 36px; }
+.wealth-results { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-bottom: 14px; }
+.wealth-chart { width: 100%; max-height: 100px; display: block; margin-top: 8px; }
+.wealth-results p { font-size: 12px; }
+.city-group { color: #8b621f; }
+.shop-badge { position: absolute; left: 2px; top: 2px; padding: 1px 3px; border-radius: 3px; background: #9c601e; color: #fff8e9; font-size: 9px; }
+.shop-location-note, .shop-arrival { color: #8b621f; }
+#result { position: fixed; inset: 0; transform: none; margin: auto; padding: 0; width: min(820px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px); color: #573b27; background: #f6e7cb; border: 1px solid #d7ba88; border-radius: 12px; box-shadow: 0 16px 80px #422d2470; }
+#result::backdrop { background: #30261999; backdrop-filter: blur(3px); }
+.report-ribbon { display: flex; align-items: center; gap: 12px; padding: 10px 24px; border-bottom: 1px solid #d7ba88; color: #806449; font-size: 12px; letter-spacing: 1px; }
+.report-ribbon > span:nth-child(2) { margin-left: auto; }
+.report-ribbon button { padding: 3px 10px; font-size: 22px; box-shadow: none; background: transparent; border-color: transparent; }
+.report-hero { text-align: center; padding: 22px 28px 20px; background: radial-gradient(ellipse at 50% 0, #ead3a4, transparent 75%); }
+.report-seal { display: inline-block; border: 2px solid currentColor; padding: 4px 9px; color: #9c601e; font: 14px KaiTi, serif; letter-spacing: 5px; transform: rotate(-5deg); }
+.report-hero h2 { font: 700 44px KaiTi, STKaiti, serif; letter-spacing: 8px; color: #9c601e; margin: 9px 0; }
+.report-hero.defeat h2, .report-hero.defeat .report-seal { color: #a44a38; }
+.report-hero p { font-size: 14px; margin: 7px 0; }
+.report-hero .report-reason { font-size: 12px; color: #806449; }
+.report-body { padding: 0 24px 20px; }
+.report-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.report-metric { padding: 14px; background: #fff8e9; border: 1px solid #d7ba88; border-radius: 6px; }
+.report-metric > span { color: #806449; font-size: 12px; }
+.report-metric strong { display: block; font-size: 27px; font-weight: 650; margin-top: 7px; font-variant-numeric: tabular-nums; }
+.report-metric small { font-size: 12px; font-weight: 400; }
+.report-metric p { font-size: 11px; color: #806449; margin: 5px 0 0; }
+.report-cause { border-left: 3px solid #a44a38; padding: 12px 14px; margin-top: 18px; background: #fff8e9; }
+.report-cause strong { font-size: 14px; }.report-cause p { margin: 6px 0 0; font-size: 12px; }
+.report-chapter { display: flex; align-items: center; gap: 12px; font-size: 15px; margin: 20px 0 12px; }
+.report-chapter::after { content: ''; flex: 1; height: 1px; background: #d7ba88; }
+.report-moments { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.report-moments article { border-left: 2px solid #d7ba88; padding-left: 12px; }
+.report-moments small { font-size: 12px; color: #806449; }
+.report-moments strong { display: block; font-size: 14px; margin: 6px 0; }
+.report-moments p { font-size: 12px; color: #806449; margin: 0; overflow-wrap: anywhere; }
+.report-details { margin-top: 20px; border-top: 1px solid #d7ba88; padding-top: 14px; }
+.report-details summary { font-size: 13px; cursor: pointer; }
+.report-table-wrap { overflow-x: auto; margin-top: 12px; }.report-table-wrap table { min-width: 480px; }
+.report-table-wrap th, .report-table-wrap td { border-bottom-color: #d7ba88; white-space: nowrap; }
+.report-table-wrap th { color: #806449; }.report-you { background: #fff8e9; }
+.report-valuation, .report-legacy { font-size: 12px; color: #806449; }
+.report-footer { position: sticky; bottom: 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; border-top: 1px solid #d7ba88; padding: 14px 24px; background: #fff8e9; }
+.report-footer > span { font-size: 12px; color: #806449; }.report-footer > div { display: flex; gap: 8px; }
+.report-footer button { font-size: 13px; }.report-footer .report-primary { background: linear-gradient(#b67832, #955021); color: #fff8e9; border-color: #995220; }
+@media (max-width: 540px) {
+  .report-ribbon { flex-wrap: wrap; gap: 5px; padding: 8px 12px; font-size: 11px; }.report-ribbon > span:nth-child(2) { margin-left: 0; }.report-ribbon button { margin-left: auto; }
+  .report-hero { padding: 18px 12px; }.report-hero h2 { font-size: 36px; letter-spacing: 5px; }
+  .report-body { padding: 0 12px 16px; }.report-metrics { gap: 6px; }.report-metric { padding: 10px 7px; }.report-metric strong { font-size: 21px; }
+  .report-moments, #result .wealth-results { grid-template-columns: 1fr; gap: 12px; }
+  .report-footer { padding: 12px; }.report-footer > div { flex-wrap: wrap; }
+}
 @media (max-width: 1200px), (max-height: 720px) {
   .game-title { width: 150px; height: 50px; }
   .game-layout { grid-template-columns: 205px minmax(0, 1fr) 224px; }
   .player strong { font-size: 11px; }
   .map-panel { padding: 7px; }.building-art { max-width: 62px; }
+  .inventory { margin-top: 8px; padding-top: 8px; }
 }
 @media (max-width: 899px) { .game-layout { grid-template-columns: minmax(0, 1fr) minmax(224px, .65fr); } }
 @media (max-height: 650px) {
   #actions:not([data-phase="TURN_START"]):not([data-phase="EXTRA_ROLL"]):not([data-phase="MOVING"]) .dice-stage { display: none; }
   #actions:is([data-phase="TURN_START"], [data-phase="EXTRA_ROLL"], [data-phase="MOVING"]) .dice-stage { --die-size: 64px; min-height: 100px; }
 }
-@media (max-width: 540px) { .game-layout { grid-template-columns: 1fr; }.map-panel { padding: 3px; } }
+@media (max-height: 780px) {
+  #actions:is([data-phase="BUY_DECISION"], [data-phase="UPGRADE_DECISION"]) .dice-stage { display: none; }
+}
+@media (max-width: 540px) { .game-layout { grid-template-columns: 1fr; }.map-panel { padding: 3px; } .estate-list, .shop-list, .wealth-results { grid-template-columns: 1fr; } }

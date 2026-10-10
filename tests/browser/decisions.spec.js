@@ -5,7 +5,7 @@ import { createGame, currentPlayer, dispatch, Phase, landPrice, upgradeCost } fr
 import { exportSave } from '../../src/core/save.js';
 
 function landing({ upgrade = false, debt = false } = {}) {
-  const state = createGame(), actor = currentPlayer(state);
+  const state = createGame({ seed: '三国-1' }), actor = currentPlayer(state);
   const index = debt ? 1 : 4;
   if (debt) {
     actor.cash = 5;
@@ -13,6 +13,7 @@ function landing({ upgrade = false, debt = false } = {}) {
       Object.assign(tile, { ownerId: tile.index === 1 ? state.order[1] : actor.id, level: 1, investment: landPrice(state, tile) });
     }
   } else if (upgrade) {
+    actor.laps = 1;
     const tile = state.board[index];
     Object.assign(tile, { ownerId: actor.id, level: 2, investment: landPrice(state, tile) + upgradeCost(state, { ...tile, level: 1 }) });
   }

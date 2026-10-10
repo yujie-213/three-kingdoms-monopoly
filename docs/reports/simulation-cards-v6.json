@@ -1,0 +1,85 @@
+{
+  "scope": "规则AI模拟，非人类试玩或平衡结论",
+  "runs": [
+    {
+      "economy": "standard",
+      "seed": "锦囊-v6-standard-0",
+      "rounds": 123,
+      "completed": true,
+      "steps": 1432,
+      "winner": "曹操"
+    },
+    {
+      "economy": "standard",
+      "seed": "锦囊-v6-standard-1",
+      "rounds": 145,
+      "completed": true,
+      "steps": 1553,
+      "winner": "曹操"
+    },
+    {
+      "economy": "standard",
+      "seed": "锦囊-v6-standard-2",
+      "rounds": 89,
+      "completed": true,
+      "steps": 998,
+      "winner": "刘备"
+    },
+    {
+      "economy": "standard",
+      "seed": "锦囊-v6-standard-3",
+      "rounds": 65,
+      "completed": true,
+      "steps": 856,
+      "winner": "孙权"
+    },
+    {
+      "economy": "standard",
+      "seed": "锦囊-v6-standard-4",
+      "rounds": 94,
+      "completed": true,
+      "steps": 1085,
+      "winner": "孙权"
+    },
+    {
+      "economy": "compact",
+      "seed": "锦囊-v6-compact-0",
+      "rounds": 153,
+      "completed": true,
+      "steps": 1869,
+      "winner": "曹操"
+    },
+    {
+      "economy": "compact",
+      "seed": "锦囊-v6-compact-1",
+      "rounds": 91,
+      "completed": true,
+      "steps": 1201,
+      "winner": "孙权"
+    },
+    {
+      "economy": "compact",
+      "seed": "锦囊-v6-compact-2",
+      "rounds": 77,
+      "completed": true,
+      "steps": 1045,
+      "winner": "刘备"
+    },
+    {
+      "economy": "compact",
+      "seed": "锦囊-v6-compact-3",
+      "rounds": 57,
+      "completed": true,
+      "steps": 728,
+      "winner": "孙权"
+    },
+    {
+      "economy": "compact",
+      "seed": "锦囊-v6-compact-4",
+      "rounds": 140,
+      "completed": true,
+      "steps": 1626,
+      "winner": "曹操"
+    }
+  ]
+}

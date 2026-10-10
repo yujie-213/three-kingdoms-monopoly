@@ -4,13 +4,14 @@ import { pathToFileURL } from 'node:url';
 
 import { playToFinish } from './helpers.js';
 
-async function verifyGame(page) {
+async function verifyGame(page, roll = true) {
   await expect(page.getByRole('heading', { name: '三国大富翁', exact: true })).toBeVisible();
   await expect(page.locator('.tile')).toHaveCount(40);
   await expect(page.locator('.token')).toHaveCount(3);
-  await expect(page.getByRole('status')).toContainText('第 1 / 40 轮');
+  await expect(page.getByRole('status')).toContainText('第 1 轮 · 经典');
   await expect(page.locator('.board')).toHaveCSS('display', 'grid');
   await page.locator('#speed').selectOption('instant');
+  if (!roll) return;
   await page.getByRole('button', { name: '掷骰子', exact: true }).click();
   await expect(page.locator('#log')).toContainText('掷出');
 }
@@ -38,7 +39,7 @@ for (const viewport of [{ width: 1366, height: 768 }, { width: 1920, height: 108
     await expect(page.locator('.building-art').first()).toHaveCSS('background-image', /^url\("data:image\/(?:png|webp)/);
     expect(await page.locator('.scene-art').evaluate((img) => img.complete && img.naturalWidth > 0)).toBe(true);
     await page.reload();
-    await verifyGame(page);
+    await verifyGame(page, false);
     expect(errors).toEqual([]);
     expect(requests.filter((request) => request !== url && !request.startsWith('data:'))).toEqual([]);
     const buttonBox = await page.getByRole('button', { name: '新局设置', exact: true }).boundingBox();
@@ -60,6 +61,8 @@ test('offline human + AI completes all 40 rounds, then starts a clean new game',
   const url = pathToFileURL(resolve('dist/三国大富翁.html')).href;
   await page.goto(url);
   await page.getByRole('button', { name: '新局设置', exact: true }).click();
+  await page.locator('select[name="mode"]').selectOption('rounds');
+  await page.getByText('高级设置', { exact: true }).click();
   await page.locator('input[name="seed"]').fill('完整局');
   await page.getByRole('button', { name: '开始新局', exact: true }).click();
   await page.locator('#speed').selectOption('instant');
@@ -68,6 +71,7 @@ test('offline human + AI completes all 40 rounds, then starts a clean new game',
   await expect(page.locator('#result')).toContainText('40 个完整轮次结束');
   await expect(page.locator('#result tbody tr')).toHaveCount(3);
   await page.screenshot({ path: testInfo.outputPath('completed-40-rounds.png'), fullPage: true });
+  await page.getByRole('button', { name: '查看终局棋盘', exact: true }).click();
   await page.locator('#speed').selectOption('normal');
   await page.getByRole('button', { name: '新局设置', exact: true }).click();
   await page.locator('select[name="factionId"]').selectOption('wu');
@@ -77,7 +81,7 @@ test('offline human + AI completes all 40 rounds, then starts a clean new game',
   await expect(page.locator('#result')).toBeHidden();
   await expect(page.getByRole('status')).toContainText('第 1 / 40 轮');
   await expect(page.locator('#players')).toContainText('孙权（你）');
-  await expect(page.locator('.player')).toContainText(['现金 1800', '现金 1800', '现金 1800']);
+  await expect(page.locator('.player')).toContainText(['现金 3200', '现金 3200', '现金 3200']);
   expect(errors).toEqual([]);
   expect(requests.filter((request) => request !== url && !request.startsWith('data:'))).toEqual([]);
 });

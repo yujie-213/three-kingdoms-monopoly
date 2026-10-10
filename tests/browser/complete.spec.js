@@ -18,16 +18,31 @@ async function downloadState(page) {
   const download = await promise;
   return JSON.parse(await readFile(await download.path(), 'utf8')).state;
 }
-function enemyLanding({ cash = 1800, shield = false, owned = false } = {}) {
-  const state = createGame(); const actor = currentPlayer(state);
+function enemyLanding({ cash = 3200, shield = false, owned = false } = {}) {
+  const state = createGame({ seed: '三国-1' }); const actor = currentPlayer(state);
   actor.cash = cash;
   if (shield) actor.cards = ['rentShield'];
-  if (owned) Object.assign(state.board[3], { ownerId: actor.id, level: 2, investment: 263 });
+  if (owned) Object.assign(state.board[3], { ownerId: actor.id, level: 2, investment: 240 });
   Object.assign(state.board[1], { ownerId: state.order[1], level: 1, investment: 150 });
   state.phase = Phase.MOVING; state.dice = 1; state.rollCount = 1;
   state.move = { from: 0, steps: 1, target: 1, laps: 0 };
   return dispatch(state, { type: 'FINISH_MOVE', actorId: actor.id, revision: 0 }).state;
 }
+
+test('offline new games automatically receive fresh seeds when the optional field is blank', async ({ page, context }) => {
+  await context.setOffline(true); await page.goto(url);
+  const seeds = [];
+  for (let i = 0; i < 2; i++) {
+    await page.getByRole('button', { name: '新局设置', exact: true }).click();
+    await expect(page.locator('input[name="seed"]')).toHaveValue('');
+    await page.getByRole('button', { name: '开始新局', exact: true }).click();
+    await page.getByRole('button', { name: '暂停', exact: true }).click();
+    seeds.push((await downloadState(page)).seed);
+  }
+  expect(seeds[0]).toMatch(/^[0-9a-f]{32}$/);
+  expect(seeds[1]).toMatch(/^[0-9a-f]{32}$/);
+  expect(seeds[1]).not.toBe(seeds[0]);
+});
 
 test('JSON download, invalid imports, cancellation and escaped logs preserve the current game', async ({ page, context }) => {
   await context.setOffline(true); await page.goto(url);
@@ -54,24 +69,24 @@ test('shield precedes rent and a sale has explicit confirmation and exact 60% re
   await expect(page.locator('#actions')).toContainText('尚未扣款');
   await page.getByRole('button', { name: '使用空城计，免除本次租金', exact: true }).click();
   const shielded = await downloadState(page);
-  expect(currentPlayer(shielded).cash).toBe(1800);
+  expect(currentPlayer(shielded).cash).toBe(3200);
   expect(currentPlayer(shielded).cards).toEqual([]);
   await upload(page, enemyLanding({ cash: 5, owned: true }));
-  await page.getByRole('button', { name: '出售 长社（回收 157 金）', exact: true }).click();
+  await page.getByRole('button', { name: '出售 长社（回收 144 金）', exact: true }).click();
   let pending = await downloadState(page);
   expect(pending.board[3].ownerId).toBe(currentPlayer(pending).id);
   await page.getByRole('button', { name: '取消出售', exact: true }).click();
-  await page.getByRole('button', { name: '出售 长社（回收 157 金）', exact: true }).click();
+  await page.getByRole('button', { name: '出售 长社（回收 144 金）', exact: true }).click();
   await page.getByRole('button', { name: '确认出售', exact: true }).click();
   pending = await downloadState(page);
-  expect(currentPlayer(pending).cash).toBe(139);
+  expect(currentPlayer(pending).cash).toBe(134);
   expect(pending.board[3]).toMatchObject({ ownerId: null, level: 0, investment: 0 });
   expect(pending.debt).toBeNull();
 });
 
 test('normal motion, fast motion and speed changes produce identical restored state', async ({ page, context }) => {
   await context.setOffline(true); await page.goto(url);
-  const initial = createGame();
+  const initial = createGame({ seed: '三国-1', config: { diceAdjustEnabled: false } });
   const moving = dispatch(initial, { type: 'ROLL', actorId: currentPlayer(initial).id, revision: 0 }).state;
   await page.locator('#speed').selectOption('normal');
   await upload(page, moving);
@@ -98,17 +113,19 @@ test('a full offline classic compact match ends by bankruptcy rather than a roun
   await page.getByRole('button', { name: '新局设置', exact: true }).click();
   await page.locator('select[name="mode"]').selectOption('classic');
   await page.locator('select[name="economy"]').selectOption('compact');
+  await page.getByText('高级设置', { exact: true }).click();
   await page.locator('input[name="seed"]').fill('验收-classic-compact-0');
   await page.getByRole('button', { name: '开始新局', exact: true }).click();
   await page.locator('#speed').selectOption('instant');
   await playToFinish(page, 3000);
   await expect(page.locator('#result')).toContainText('仅剩一名存活角色');
+  await page.screenshot({ path: testInfo.outputPath('completed-classic.png'), fullPage: true });
+  await page.getByRole('button', { name: '查看终局棋盘', exact: true }).click();
   const saved = await downloadState(page);
   expect(saved.mode).toBe('classic');
   expect(saved.players.filter((p) => p.alive)).toHaveLength(1);
   expect(saved.completedRounds).toBeGreaterThan(40);
   expect(saved.debt).toBeNull();
-  await page.screenshot({ path: testInfo.outputPath('completed-classic.png'), fullPage: true });
   expect(errors).toEqual([]);
   expect(requests.filter((request) => request !== url && !request.startsWith('data:') && !request.startsWith('blob:'))).toEqual([]);
   console.log(`Classic offline completion: ${saved.completedRounds} complete rounds; ${saved.players.find((p) => p.alive).name} survives.`);

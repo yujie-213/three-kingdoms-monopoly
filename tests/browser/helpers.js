@@ -1,12 +1,17 @@
 export async function playToFinish(page, maximum = 1500) {
   for (let steps = 0; steps < maximum; steps++) {
     await page.waitForFunction(() => !document.querySelector('#result').hidden || document.querySelector('#actions button:not(:disabled)'));
-    if (await page.locator('#result').isVisible()) return;
+    if (await page.locator('#result').isVisible()) {
+      const observe = page.locator('#result').getByRole('button', { name: '继续观战', exact: true });
+      if (await observe.count()) { await observe.click(); continue; }
+      return;
+    }
     const action = page.locator('#actions');
     const button = (name) => action.getByRole('button', { name, exact: true });
-    if (await button('使用 生财有道').count()) await button('使用 生财有道').click();
+    if (await button('使用 生财有道').count() && await button('使用 生财有道').isEnabled()) await button('使用 生财有道').click();
     else if (await button('使用 千里走单骑').count() && await button('使用 千里走单骑').isEnabled()) await button('使用 千里走单骑').click();
     else if (await button('掷骰子').count()) await button('掷骰子').click();
+    else if (await button('按原点数行军').count()) await button('按原点数行军').click();
     else if (await button('额外掷骰子').count()) await button('额外掷骰子').click();
     else if (await button('结束回合').count()) await button('结束回合').click();
     else if (await button('放弃').count()) {

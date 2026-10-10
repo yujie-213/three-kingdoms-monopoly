@@ -34,19 +34,24 @@ test('recipient can open only the copied HTML offline, finish a game and restore
   }
   await page.screenshot({ path: testInfo.outputPath('recipient-offline.png') });
   await page.getByRole('button', { name: '新局设置', exact: true }).click();
+  await page.locator('select[name="mode"]').selectOption('rounds');
+  await page.getByText('高级设置', { exact: true }).click();
   await page.locator('input[name="seed"]').fill('完整局');
   await page.getByRole('button', { name: '开始新局', exact: true }).click();
   await page.locator('#speed').selectOption('instant');
   await playToFinish(page);
   await expect(page.locator('#result')).toContainText('40 个完整轮次结束');
+  await page.getByRole('button', { name: '查看终局棋盘', exact: true }).click();
   const pendingDownload = page.waitForEvent('download');
   await page.getByRole('button', { name: '导出存档', exact: true }).click();
   const save = await readFile(await (await pendingDownload).path());
   await page.reload();
-  await expect(page.getByRole('status')).toContainText('第 1 / 40 轮');
+  await expect(page.locator('#result')).toContainText('40 个完整轮次结束');
+  await page.getByRole('button', { name: '查看终局棋盘', exact: true }).click();
   await page.locator('#import-save').setInputFiles({ name: '试玩存档.json', mimeType: 'application/json', buffer: save });
   await page.getByRole('button', { name: '确认导入', exact: true }).click();
   await expect(page.locator('#result')).toContainText('40 个完整轮次结束');
+  await page.getByRole('button', { name: '查看终局棋盘', exact: true }).click();
   const restoredDownload = page.waitForEvent('download');
   await page.getByRole('button', { name: '导出存档', exact: true }).click();
   const restored = await readFile(await (await restoredDownload).path(), 'utf8');

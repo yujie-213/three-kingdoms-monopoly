@@ -1,0 +1,85 @@
+{
+  "purpose": "规则回归，非人类试玩或平衡证明",
+  "runs": [
+    {
+      "economy": "standard",
+      "seed": "shop-v7-standard-0",
+      "steps": 970,
+      "rounds": 78,
+      "free": 15,
+      "paid": 0
+    },
+    {
+      "economy": "standard",
+      "seed": "shop-v7-standard-1",
+      "steps": 891,
+      "rounds": 69,
+      "free": 12,
+      "paid": 0
+    },
+    {
+      "economy": "standard",
+      "seed": "shop-v7-standard-2",
+      "steps": 871,
+      "rounds": 64,
+      "free": 12,
+      "paid": 2
+    },
+    {
+      "economy": "standard",
+      "seed": "shop-v7-standard-3",
+      "steps": 1643,
+      "rounds": 169,
+      "free": 27,
+      "paid": 3
+    },
+    {
+      "economy": "standard",
+      "seed": "shop-v7-standard-4",
+      "steps": 767,
+      "rounds": 60,
+      "free": 8,
+      "paid": 3
+    },
+    {
+      "economy": "compact",
+      "seed": "shop-v7-compact-0",
+      "steps": 1088,
+      "rounds": 78,
+      "free": 16,
+      "paid": 0
+    },
+    {
+      "economy": "compact",
+      "seed": "shop-v7-compact-1",
+      "steps": 1544,
+      "rounds": 124,
+      "free": 20,
+      "paid": 0
+    },
+    {
+      "economy": "compact",
+      "seed": "shop-v7-compact-2",
+      "steps": 1938,
+      "rounds": 141,
+      "free": 30,
+      "paid": 1
+    },
+    {
+      "economy": "compact",
+      "seed": "shop-v7-compact-3",
+      "steps": 1631,
+      "rounds": 136,
+      "free": 25,
+      "paid": 1
+    },
+    {
+      "economy": "compact",
+      "seed": "shop-v7-compact-4",
+      "steps": 1373,
+      "rounds": 108,
+      "free": 25,
+      "paid": 1
+    }
+  ]
+}

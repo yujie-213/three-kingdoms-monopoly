@@ -2,6 +2,8 @@ export const cards = Object.freeze({
   rentShield: { name: '空城计', description: '免除本次敌地过路费；扣款前决定使用。' },
   stride: { name: '千里走单骑', description: '掷骰前使用，本回合首次移动额外 +2 格。' },
   fortune: { name: '生财有道', description: '掷骰前使用，立即获得 100 金。' },
+  repair: { name: '修城令', description: '掷骰前使用，本回合一次升级费用减半；未建设则随回合结束失效。' },
+  commerce: { name: '商路兴盛', description: '掷骰前对一座己方城池使用，本轮及接下来两轮租金提高25%，不重复叠加。' },
 });
 
 export const events = [

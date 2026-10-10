@@ -14,7 +14,7 @@ for (const viewport of [
     await page.setViewportSize(viewport);
     await context.setOffline(true);
     await page.goto(pathToFileURL(resolve('dist/三国大富翁.html')).href);
-    const state = createGame();
+    const state = createGame({ seed: '三国-1' });
     state.players.find((player) => player.human).cards = ['rentShield', 'stride', 'fortune'];
     // Use the real save flow so a full inventory also exercises the action panel.
     await page.locator('#import-save').setInputFiles({ name: 'layout.json', mimeType: 'application/json', buffer: Buffer.from(exportSave(state)) });

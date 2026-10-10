@@ -1,0 +1,2031 @@
+{
+  "purpose": "v4 classic economy and active construction simulations; not human feedback or proof of balance. All seats use public rules; human seat uses baseline reserve 200.",
+  "samples": 90,
+  "summary": {
+    "rounds": {
+      "samples": 30,
+      "completed": 30,
+      "averageRounds": 39.87,
+      "medianRounds": 40,
+      "maxRounds": 40,
+      "averageUpgrades": 25.17,
+      "bankruptcies": 12,
+      "firstSeatWins": 16,
+      "wins": {
+        "liu": 8,
+        "cao": 8,
+        "sun": 14
+      }
+    },
+    "classic-standard": {
+      "samples": 30,
+      "completed": 30,
+      "averageRounds": 100.97,
+      "medianRounds": 104,
+      "maxRounds": 185,
+      "averageUpgrades": 47.7,
+      "bankruptcies": 60,
+      "firstSeatWins": 11,
+      "wins": {
+        "liu": 8,
+        "cao": 9,
+        "sun": 13
+      }
+    },
+    "classic-compact": {
+      "samples": 30,
+      "completed": 30,
+      "averageRounds": 159.67,
+      "medianRounds": 168,
+      "maxRounds": 259,
+      "averageUpgrades": 23.8,
+      "bankruptcies": 60,
+      "firstSeatWins": 11,
+      "wins": {
+        "liu": 7,
+        "cao": 14,
+        "sun": 9
+      }
+    }
+  },
+  "landTotals": {
+    "许县，": {
+      "invested": 23200,
+      "rent": 0
+    },
+    "颍阴，": {
+      "invested": 24450,
+      "rent": 0
+    },
+    "许县": {
+      "invested": 32000,
+      "rent": 23565
+    },
+    "颍阴": {
+      "invested": 31986,
+      "rent": 17667
+    },
+    "长社，": {
+      "invested": 21900,
+      "rent": 0
+    },
+    "洛阳，": {
+      "invested": 31200,
+      "rent": 0
+    },
+    "谯县，": {
+      "invested": 18300,
+      "rent": 0
+    },
+    "平舆，": {
+      "invested": 17000,
+      "rent": 0
+    },
+    "洛阳": {
+      "invested": 40300,
+      "rent": 26385
+    },
+    "陈留，": {
+      "invested": 22500,
+      "rent": 0
+    },
+    "谯县": {
+      "invested": 28335,
+      "rent": 21916
+    },
+    "平舆": {
+      "invested": 26000,
+      "rent": 25900
+    },
+    "长社": {
+      "invested": 31097,
+      "rent": 23083
+    },
+    "陈留": {
+      "invested": 29725,
+      "rent": 21857
+    },
+    "新野，": {
+      "invested": 15600,
+      "rent": 0
+    },
+    "柴桑，": {
+      "invested": 12000,
+      "rent": 0
+    },
+    "柴桑": {
+      "invested": 17570,
+      "rent": 10834
+    },
+    "新野": {
+      "invested": 22492,
+      "rent": 19795
+    },
+    "永安，": {
+      "invested": 8250,
+      "rent": 0
+    },
+    "永安": {
+      "invested": 11652,
+      "rent": 6870
+    },
+    "夷陵，": {
+      "invested": 12300,
+      "rent": 0
+    },
+    "夷陵": {
+      "invested": 17363,
+      "rent": 13454
+    },
+    "建业，": {
+      "invested": 8400,
+      "rent": 0
+    },
+    "泉陵，": {
+      "invested": 10000,
+      "rent": 0
+    },
+    "泉陵": {
+      "invested": 14893,
+      "rent": 11010
+    },
+    "南昌，": {
+      "invested": 10750,
+      "rent": 0
+    },
+    "南昌": {
+      "invested": 15581,
+      "rent": 8816
+    },
+    "建业": {
+      "invested": 11400,
+      "rent": 3825
+    },
+    "江陵，": {
+      "invested": 14000,
+      "rent": 0
+    },
+    "江陵": {
+      "invested": 21338,
+      "rent": 11818
+    },
+    "梓潼，": {
+      "invested": 6500,
+      "rent": 0
+    },
+    "梓潼": {
+      "invested": 8480,
+      "rent": 4815
+    },
+    "临湘，": {
+      "invested": 13250,
+      "rent": 0
+    },
+    "临湘": {
+      "invested": 18898,
+      "rent": 8006
+    },
+    "曲阿，": {
+      "invested": 9600,
+      "rent": 0
+    },
+    "曲阿": {
+      "invested": 14167,
+      "rent": 9472
+    },
+    "南郑，": {
+      "invested": 3750,
+      "rent": 0
+    },
+    "南郑": {
+      "invested": 4662,
+      "rent": 2963
+    },
+    "襄阳，": {
+      "invested": 14750,
+      "rent": 0
+    },
+    "襄阳": {
+      "invested": 21057,
+      "rent": 20663
+    },
+    "郫县，": {
+      "invested": 9600,
+      "rent": 0
+    },
+    "郫县": {
+      "invested": 13867,
+      "rent": 9150
+    },
+    "江州，": {
+      "invested": 8250,
+      "rent": 0
+    },
+    "江州": {
+      "invested": 11952,
+      "rent": 8154
+    },
+    "鄱阳，": {
+      "invested": 8750,
+      "rent": 0
+    },
+    "山阴，": {
+      "invested": 6250,
+      "rent": 0
+    },
+    "鄱阳": {
+      "invested": 13422,
+      "rent": 7106
+    },
+    "山阴": {
+      "invested": 8448,
+      "rent": 5410
+    },
+    "宛县，": {
+      "invested": 15250,
+      "rent": 0
+    },
+    "宛县": {
+      "invested": 20838,
+      "rent": 20030
+    },
+    "雒县，": {
+      "invested": 8000,
+      "rent": 0
+    },
+    "吴县，": {
+      "invested": 9250,
+      "rent": 0
+    },
+    "吴县": {
+      "invested": 12797,
+      "rent": 6843
+    },
+    "阆中，": {
+      "invested": 6750,
+      "rent": 0
+    },
+    "阆中": {
+      "invested": 10043,
+      "rent": 4754
+    },
+    "雒县": {
+      "invested": 10544,
+      "rent": 5403
+    },
+    "成都，": {
+      "invested": 2000,
+      "rent": 0
+    },
+    "成都": {
+      "invested": 2800,
+      "rent": 560
+    }
+  },
+  "bankruptcyCauses": {
+    "江陵 过路费": 4,
+    "集市税费": 8,
+    "鄱阳 过路费": 4,
+    "夷陵 过路费": 7,
+    "临湘 过路费": 3,
+    "许县 过路费": 2,
+    "洛阳 过路费": 4,
+    "柴桑 过路费": 2,
+    "谯县 过路费": 4,
+    "平舆 过路费": 7,
+    "南郑 过路费": 3,
+    "郫县 过路费": 7,
+    "粮草损耗": 3,
+    "襄阳 过路费": 7,
+    "阆中 过路费": 5,
+    "陈留 过路费": 6,
+    "梓潼 过路费": 3,
+    "南昌 过路费": 6,
+    "雒县 过路费": 6,
+    "宛县 过路费": 9,
+    "江州 过路费": 4,
+    "山贼": 3,
+    "建业 过路费": 1,
+    "长社 过路费": 5,
+    "朝廷征税": 4,
+    "泉陵 过路费": 1,
+    "吴县 过路费": 3,
+    "救济百姓": 1,
+    "新野 过路费": 3,
+    "颍阴 过路费": 3,
+    "山阴 过路费": 3,
+    "曲阿 过路费": 1
+  },
+  "runs": [
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-0",
+      "completed": true,
+      "rounds": 40,
+      "operations": 464,
+      "winner": "liu",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 15,
+      "upgrades": 27,
+      "collectedRent": 1868,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-1",
+      "completed": true,
+      "rounds": 40,
+      "operations": 456,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 1,
+      "purchases": 15,
+      "upgrades": 25,
+      "collectedRent": 2018,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-2",
+      "completed": true,
+      "rounds": 40,
+      "operations": 473,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 13,
+      "upgrades": 25,
+      "collectedRent": 1710,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-3",
+      "completed": true,
+      "rounds": 40,
+      "operations": 453,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 1,
+      "purchases": 15,
+      "upgrades": 25,
+      "collectedRent": 2238,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-4",
+      "completed": true,
+      "rounds": 40,
+      "operations": 460,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "purchases": 17,
+      "upgrades": 27,
+      "collectedRent": 1984,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-5",
+      "completed": true,
+      "rounds": 40,
+      "operations": 422,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 1,
+      "purchases": 16,
+      "upgrades": 28,
+      "collectedRent": 2999,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-6",
+      "completed": true,
+      "rounds": 40,
+      "operations": 475,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 1,
+      "purchases": 16,
+      "upgrades": 25,
+      "collectedRent": 1616,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-7",
+      "completed": true,
+      "rounds": 40,
+      "operations": 485,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "purchases": 19,
+      "upgrades": 30,
+      "collectedRent": 2301,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-8",
+      "completed": true,
+      "rounds": 40,
+      "operations": 461,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 1,
+      "purchases": 16,
+      "upgrades": 25,
+      "collectedRent": 2783,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-9",
+      "completed": true,
+      "rounds": 40,
+      "operations": 454,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "purchases": 13,
+      "upgrades": 23,
+      "collectedRent": 1361,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-10",
+      "completed": true,
+      "rounds": 40,
+      "operations": 455,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 1,
+      "purchases": 14,
+      "upgrades": 24,
+      "collectedRent": 3526,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-11",
+      "completed": true,
+      "rounds": 40,
+      "operations": 473,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 15,
+      "upgrades": 24,
+      "collectedRent": 3326,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-12",
+      "completed": true,
+      "rounds": 40,
+      "operations": 464,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 14,
+      "upgrades": 22,
+      "collectedRent": 1731,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-13",
+      "completed": true,
+      "rounds": 40,
+      "operations": 474,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 0,
+      "purchases": 14,
+      "upgrades": 24,
+      "collectedRent": 1933,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-14",
+      "completed": true,
+      "rounds": 40,
+      "operations": 476,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "purchases": 16,
+      "upgrades": 30,
+      "collectedRent": 2876,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-15",
+      "completed": true,
+      "rounds": 36,
+      "operations": 435,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 18,
+      "upgrades": 29,
+      "collectedRent": 4037,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-16",
+      "completed": true,
+      "rounds": 40,
+      "operations": 478,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 17,
+      "upgrades": 24,
+      "collectedRent": 1768,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-17",
+      "completed": true,
+      "rounds": 40,
+      "operations": 445,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 1,
+      "purchases": 15,
+      "upgrades": 25,
+      "collectedRent": 1058,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-18",
+      "completed": true,
+      "rounds": 40,
+      "operations": 469,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 0,
+      "purchases": 14,
+      "upgrades": 24,
+      "collectedRent": 1185,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-19",
+      "completed": true,
+      "rounds": 40,
+      "operations": 451,
+      "winner": "liu",
+      "firstSeat": "sun",
+      "bankruptcies": 1,
+      "purchases": 17,
+      "upgrades": 27,
+      "collectedRent": 3187,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-20",
+      "completed": true,
+      "rounds": 40,
+      "operations": 467,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 16,
+      "upgrades": 23,
+      "collectedRent": 2568,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-21",
+      "completed": true,
+      "rounds": 40,
+      "operations": 463,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 16,
+      "upgrades": 25,
+      "collectedRent": 2454,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-22",
+      "completed": true,
+      "rounds": 40,
+      "operations": 478,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 0,
+      "purchases": 16,
+      "upgrades": 24,
+      "collectedRent": 2274,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-23",
+      "completed": true,
+      "rounds": 40,
+      "operations": 428,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 1,
+      "purchases": 14,
+      "upgrades": 26,
+      "collectedRent": 1146,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-24",
+      "completed": true,
+      "rounds": 40,
+      "operations": 463,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 1,
+      "purchases": 16,
+      "upgrades": 26,
+      "collectedRent": 1481,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-25",
+      "completed": true,
+      "rounds": 40,
+      "operations": 460,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "purchases": 13,
+      "upgrades": 23,
+      "collectedRent": 3085,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-26",
+      "completed": true,
+      "rounds": 40,
+      "operations": 458,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 0,
+      "purchases": 13,
+      "upgrades": 23,
+      "collectedRent": 2124,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-27",
+      "completed": true,
+      "rounds": 40,
+      "operations": 469,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 0,
+      "purchases": 13,
+      "upgrades": 23,
+      "collectedRent": 1283,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-28",
+      "completed": true,
+      "rounds": 40,
+      "operations": 473,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 0,
+      "purchases": 15,
+      "upgrades": 24,
+      "collectedRent": 1614,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "rounds",
+      "mode": "rounds",
+      "economy": "standard",
+      "seed": "验收-rounds-29",
+      "completed": true,
+      "rounds": 40,
+      "operations": 474,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 0,
+      "purchases": 15,
+      "upgrades": 25,
+      "collectedRent": 2872,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "40 个完整轮次结束，按总资产排名。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-0",
+      "completed": true,
+      "rounds": 106,
+      "operations": 1009,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 24,
+      "upgrades": 47,
+      "collectedRent": 8171,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-1",
+      "completed": true,
+      "rounds": 111,
+      "operations": 1048,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 33,
+      "upgrades": 53,
+      "collectedRent": 6664,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-2",
+      "completed": true,
+      "rounds": 66,
+      "operations": 696,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 19,
+      "upgrades": 36,
+      "collectedRent": 5855,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-3",
+      "completed": true,
+      "rounds": 34,
+      "operations": 428,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 17,
+      "upgrades": 25,
+      "collectedRent": 2525,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-4",
+      "completed": true,
+      "rounds": 185,
+      "operations": 1513,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 41,
+      "upgrades": 64,
+      "collectedRent": 10632,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-5",
+      "completed": true,
+      "rounds": 100,
+      "operations": 1011,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 28,
+      "upgrades": 53,
+      "collectedRent": 7381,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-6",
+      "completed": true,
+      "rounds": 107,
+      "operations": 1082,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 23,
+      "upgrades": 42,
+      "collectedRent": 6216,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-7",
+      "completed": true,
+      "rounds": 147,
+      "operations": 1201,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upgrades": 59,
+      "collectedRent": 8430,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-8",
+      "completed": true,
+      "rounds": 57,
+      "operations": 540,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 20,
+      "upgrades": 33,
+      "collectedRent": 3523,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-9",
+      "completed": true,
+      "rounds": 70,
+      "operations": 813,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 25,
+      "upgrades": 44,
+      "collectedRent": 6397,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-10",
+      "completed": true,
+      "rounds": 142,
+      "operations": 1239,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 32,
+      "upgrades": 57,
+      "collectedRent": 6598,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-11",
+      "completed": true,
+      "rounds": 65,
+      "operations": 704,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 22,
+      "upgrades": 39,
+      "collectedRent": 5584,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-12",
+      "completed": true,
+      "rounds": 108,
+      "operations": 1003,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 33,
+      "upgrades": 53,
+      "collectedRent": 7614,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-13",
+      "completed": true,
+      "rounds": 112,
+      "operations": 1200,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 41,
+      "upgrades": 59,
+      "collectedRent": 9376,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-14",
+      "completed": true,
+      "rounds": 104,
+      "operations": 1130,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 28,
+      "upgrades": 52,
+      "collectedRent": 9095,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-15",
+      "completed": true,
+      "rounds": 111,
+      "operations": 1044,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 26,
+      "upgrades": 49,
+      "collectedRent": 6568,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-16",
+      "completed": true,
+      "rounds": 96,
+      "operations": 941,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 24,
+      "upgrades": 44,
+      "collectedRent": 7761,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-17",
+      "completed": true,
+      "rounds": 61,
+      "operations": 730,
+      "winner": "liu",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 22,
+      "upgrades": 37,
+      "collectedRent": 5410,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-18",
+      "completed": true,
+      "rounds": 178,
+      "operations": 1657,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 44,
+      "upgrades": 79,
+      "collectedRent": 14132,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-19",
+      "completed": true,
+      "rounds": 62,
+      "operations": 670,
+      "winner": "liu",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 22,
+      "upgrades": 40,
+      "collectedRent": 4758,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-20",
+      "completed": true,
+      "rounds": 62,
+      "operations": 631,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 18,
+      "upgrades": 34,
+      "collectedRent": 5288,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-21",
+      "completed": true,
+      "rounds": 136,
+      "operations": 1180,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 36,
+      "upgrades": 53,
+      "collectedRent": 7547,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-22",
+      "completed": true,
+      "rounds": 110,
+      "operations": 1031,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 28,
+      "upgrades": 50,
+      "collectedRent": 7138,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-23",
+      "completed": true,
+      "rounds": 90,
+      "operations": 893,
+      "winner": "liu",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 24,
+      "upgrades": 36,
+      "collectedRent": 5601,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-24",
+      "completed": true,
+      "rounds": 98,
+      "operations": 922,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 24,
+      "upgrades": 41,
+      "collectedRent": 6306,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-25",
+      "completed": true,
+      "rounds": 92,
+      "operations": 986,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 26,
+      "upgrades": 48,
+      "collectedRent": 6750,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-26",
+      "completed": true,
+      "rounds": 89,
+      "operations": 894,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 27,
+      "upgrades": 47,
+      "collectedRent": 6788,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-27",
+      "completed": true,
+      "rounds": 134,
+      "operations": 1306,
+      "winner": "liu",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upgrades": 62,
+      "collectedRent": 10890,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-28",
+      "completed": true,
+      "rounds": 64,
+      "operations": 674,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 22,
+      "upgrades": 36,
+      "collectedRent": 4191,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-standard",
+      "mode": "classic",
+      "economy": "standard",
+      "seed": "验收-classic-standard-29",
+      "completed": true,
+      "rounds": 132,
+      "operations": 1186,
+      "winner": "liu",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 35,
+      "upgrades": 59,
+      "collectedRent": 9342,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-0",
+      "completed": true,
+      "rounds": 172,
+      "operations": 1493,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 20,
+      "upgrades": 29,
+      "collectedRent": 3780,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-1",
+      "completed": true,
+      "rounds": 102,
+      "operations": 987,
+      "winner": "liu",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 12,
+      "upgrades": 18,
+      "collectedRent": 2241,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-2",
+      "completed": true,
+      "rounds": 125,
+      "operations": 1184,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 12,
+      "upgrades": 20,
+      "collectedRent": 2604,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-3",
+      "completed": true,
+      "rounds": 107,
+      "operations": 1211,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 11,
+      "upgrades": 19,
+      "collectedRent": 3234,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-4",
+      "completed": true,
+      "rounds": 244,
+      "operations": 2249,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 26,
+      "upgrades": 35,
+      "collectedRent": 8032,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-5",
+      "completed": true,
+      "rounds": 184,
+      "operations": 1734,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 22,
+      "upgrades": 30,
+      "collectedRent": 6906,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-6",
+      "completed": true,
+      "rounds": 213,
+      "operations": 1853,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 21,
+      "upgrades": 36,
+      "collectedRent": 4493,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-7",
+      "completed": true,
+      "rounds": 124,
+      "operations": 1250,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 13,
+      "upgrades": 21,
+      "collectedRent": 2207,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-8",
+      "completed": true,
+      "rounds": 185,
+      "operations": 1777,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 16,
+      "upgrades": 23,
+      "collectedRent": 3076,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-9",
+      "completed": true,
+      "rounds": 259,
+      "operations": 2223,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 19,
+      "upgrades": 33,
+      "collectedRent": 4085,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-10",
+      "completed": true,
+      "rounds": 96,
+      "operations": 923,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 11,
+      "upgrades": 18,
+      "collectedRent": 2126,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-11",
+      "completed": true,
+      "rounds": 96,
+      "operations": 1066,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 10,
+      "upgrades": 16,
+      "collectedRent": 1953,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-12",
+      "completed": true,
+      "rounds": 142,
+      "operations": 1235,
+      "winner": "liu",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 15,
+      "upgrades": 20,
+      "collectedRent": 2595,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-13",
+      "completed": true,
+      "rounds": 118,
+      "operations": 1156,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 11,
+      "upgrades": 16,
+      "collectedRent": 3072,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-14",
+      "completed": true,
+      "rounds": 176,
+      "operations": 1514,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 16,
+      "upgrades": 23,
+      "collectedRent": 3624,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-15",
+      "completed": true,
+      "rounds": 168,
+      "operations": 1573,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 16,
+      "upgrades": 25,
+      "collectedRent": 2982,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-16",
+      "completed": true,
+      "rounds": 94,
+      "operations": 1039,
+      "winner": "sun",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 10,
+      "upgrades": 18,
+      "collectedRent": 2469,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-17",
+      "completed": true,
+      "rounds": 185,
+      "operations": 1571,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 13,
+      "upgrades": 19,
+      "collectedRent": 2498,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-18",
+      "completed": true,
+      "rounds": 137,
+      "operations": 1520,
+      "winner": "cao",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 18,
+      "upgrades": 25,
+      "collectedRent": 4891,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-19",
+      "completed": true,
+      "rounds": 176,
+      "operations": 1930,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 22,
+      "upgrades": 37,
+      "collectedRent": 4796,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-20",
+      "completed": true,
+      "rounds": 215,
+      "operations": 1856,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 14,
+      "upgrades": 24,
+      "collectedRent": 2060,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-21",
+      "completed": true,
+      "rounds": 243,
+      "operations": 2014,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 19,
+      "upgrades": 35,
+      "collectedRent": 4019,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-22",
+      "completed": true,
+      "rounds": 157,
+      "operations": 1585,
+      "winner": "liu",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 14,
+      "upgrades": 20,
+      "collectedRent": 3027,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-23",
+      "completed": true,
+      "rounds": 172,
+      "operations": 1806,
+      "winner": "cao",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 19,
+      "upgrades": 33,
+      "collectedRent": 4291,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-24",
+      "completed": true,
+      "rounds": 93,
+      "operations": 890,
+      "winner": "cao",
+      "firstSeat": "liu",
+      "bankruptcies": 2,
+      "purchases": 9,
+      "upgrades": 12,
+      "collectedRent": 2040,
+      "tiedWinners": [
+        "cao"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-25",
+      "completed": true,
+      "rounds": 127,
+      "operations": 1077,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 12,
+      "upgrades": 18,
+      "collectedRent": 3126,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-26",
+      "completed": true,
+      "rounds": 182,
+      "operations": 1441,
+      "winner": "sun",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 14,
+      "upgrades": 24,
+      "collectedRent": 2285,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-27",
+      "completed": true,
+      "rounds": 231,
+      "operations": 1878,
+      "winner": "liu",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 15,
+      "upgrades": 28,
+      "collectedRent": 3418,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-28",
+      "completed": true,
+      "rounds": 104,
+      "operations": 1083,
+      "winner": "sun",
+      "firstSeat": "sun",
+      "bankruptcies": 2,
+      "purchases": 10,
+      "upgrades": 18,
+      "collectedRent": 2664,
+      "tiedWinners": [
+        "sun"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    },
+    {
+      "group": "classic-compact",
+      "mode": "classic",
+      "economy": "compact",
+      "seed": "验收-classic-compact-29",
+      "completed": true,
+      "rounds": 163,
+      "operations": 1454,
+      "winner": "liu",
+      "firstSeat": "cao",
+      "bankruptcies": 2,
+      "purchases": 12,
+      "upgrades": 21,
+      "collectedRent": 1756,
+      "tiedWinners": [
+        "liu"
+      ],
+      "endReason": "仅剩一名存活角色，赢得本局。"
+    }
+  ]
+}

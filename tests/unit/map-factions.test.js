@@ -39,7 +39,7 @@ describe('40-cell historical route and faction roster', () => {
     expect(rolled.move).toMatchObject({ from: 39, target: 0, laps: 1 });
     const loaded = importSave(exportSave(rolled));
     const ended = dispatch(loaded, { type: 'FINISH_MOVE', actorId: currentPlayer(loaded).id, revision: loaded.revision }).state;
-    expect(currentPlayer(ended).cash).toBe(2300);
+    expect(currentPlayer(ended).cash).toBe(3325);
     expect(currentPlayer(ended).laps).toBe(1);
     expect(importSave(exportSave(ended))).toEqual(ended);
   });
